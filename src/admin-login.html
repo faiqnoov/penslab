@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet" />
+  <title>penslab - admin</title>
+</head>
+<body>
+  <div class="h-screen flex flex-col">
+    <nav class="flex items-center p-4">
+      <img src="img/logo-main.png" alt="logo" height="38">
+    </nav>
+
+    <div class="w-96 h-auto bg-gray-200 rounded-xl m-auto px-14 py-10 shadow-md">
+      <div class="flex">
+        <span class="m-auto text-yellow-500 font-semibold text-2xl mb-4">PENSLAB</span>
+      </div>
+      <form action="">
+        <label for="email" class="block mb-3">
+          <span class="block font-semibold mb-1 text-gray-900">Email</span>
+          <input type="text" id="email" class="px-3 py-2 border shadow rounded w-full block text-sm bg-transparent border-gray-400 focus:bg-white focus:outline-none focus:ring-1 focus:ring-color1 focus:border-color1">
+        </label>
+        <label for="pass" class="block">
+          <span class="block font-semibold mb-1 text-gray-900">Password</span>
+          <input type="password" id="pass" class="px-3 py-2 border shadow rounded w-full block text-sm bg-transparent border-gray-400 focus:bg-white focus:outline-none focus:ring-1 focus:ring-color1 focus:border-color1">
+        </label>
+        <a href="#" class="block mt-1 text-sm underline text-blue-900">Forgot password?</a>
+        <button class="px-7 py-2 bg-color1 rounded-lg text-white font-semibold mt-8 block mx-auto hover:bg-blue-900">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

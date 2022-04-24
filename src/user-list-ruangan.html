@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet" />
+  <title>penslab</title>
+</head>
+<body>
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container py-2">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <img src="img/logo-main.png" alt="logo" height="38">
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+
+          <nav
+            id="nav-menu"
+            class="hidden absolute bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+          >
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#" class="text-base text-dark py-2 mx-8 flex group-hover:text-color1 group-hover:font-semibold">Home</a>
+              </li>
+              <li class="group">
+                <a href="#" class="text-base text-dark py-2 mx-8 flex group-hover:text-color1 group-hover:font-semibold">Laboratorium</a>
+              </li>
+              <li class="group">
+                <a href="#" class="text-base text-dark py-2 mx-8 flex group-hover:text-color1 group-hover:font-semibold">Ruangan</a>
+              </li>
+              <li class="group">
+                <a href="#" class="text-base text-dark py-2 mx-8 flex group-hover:text-color1 group-hover:font-semibold">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mt-20">
+    <form class="mb-7">
+      <label for="gedung">Gedung</label>
+      <select name="gedung" id="gedung" class="border-2 px-3 py-2 rounded-md mx-3">
+        <option value="d3">D3</option>
+        <option value="d4">D4</option>
+        <option value="pascasarjana">Pascasarjana</option>
+      </select>
+      <label for="lantai">Lantai</label>
+      <select name="lantai" id="lantai" class="border-2 px-3 py-2 rounded-md mx-3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </form>
+
+    <div class="sm:flex sm:flex-wrap sm:gap-3">
+      <div class="p-4 rounded-xl bg-blue-900 text-white mb-3 sm:w-64 sm:mb-0">
+        <div class="bg-cover w-full aspect-[4/3] rounded-xl bg-[url(/src/img/1.jpg)]"></div>
+        <p class="block mt-2 uppercase font-semibold">Lab. Sistem Informasi</p>
+        <span class="text-sm">Gedung D4 Lantai 2</span>
+        <div class="flex justify-end mt-5">
+          <a href="#" class="block px-2 py-1 rounded bg-blue-500 hover:bg-blue-400">Detail</a>
+        </div>
+      </div>
+      <div class="p-4 rounded-xl bg-blue-900 text-white mb-3 sm:w-64 sm:mb-0">
+        <div class="bg-cover w-full aspect-[4/3] rounded-xl bg-[url(/src/img/1.jpg)]"></div>
+        <p class="block mt-2 uppercase font-semibold">Lab. Sistem Informasi</p>
+        <span class="text-sm">Gedung D4 Lantai 2</span>
+        <div class="flex justify-end mt-5">
+          <a href="#" class="block px-2 py-1 rounded bg-blue-500 hover:bg-blue-400">Detail</a>
+        </div>
+      </div>
+      <div class="p-4 rounded-xl bg-blue-900 text-white mb-3 sm:w-64 sm:mb-0">
+        <div class="bg-cover w-full aspect-[4/3] rounded-xl bg-[url(/src/img/1.jpg)]"></div>
+        <p class="block mt-2 uppercase font-semibold">Lab. Sistem Informasi</p>
+        <span class="text-sm">Gedung D4 Lantai 2</span>
+        <div class="flex justify-end mt-5">
+          <a href="#" class="block px-2 py-1 rounded bg-blue-500 hover:bg-blue-400">Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
